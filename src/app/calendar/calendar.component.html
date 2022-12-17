@@ -1,0 +1,18 @@
+<h1>December 2022</h1>
+<table>
+  <tr *ngFor="let row of rows; index as week">
+    <td
+      *ngFor="let column of columns; index as day"
+      [ngClass] = "{'hover-style': show[rows[week] * 7 + day]}"
+      (mouseenter) = "Show(rows[week] * 7 + day)"
+      (mouseleave) = "hide(rows[week] * 7 + day)"
+    >
+      <strong>{{ columns[day] }}</strong> <br />
+      {{ rows[week] * 7 + day + 1 }} <br />
+
+      <li  *ngFor="let todoItem of todos[rows[week] * 7 + day].todoList">
+       <div *ngIf = "show[rows[week] * 7 + day]">{{ todoItem }}</div> 
+      </li>
+    </td>
+  </tr>
+</table>

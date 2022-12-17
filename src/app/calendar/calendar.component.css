@@ -1,0 +1,45 @@
+table {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 80%;
+  margin-top: 100px;
+  margin: auto;
+}
+td {
+  text-align: center;
+  vertical-align: top;
+  border: 0.5em solid black;
+  width: 14%;
+  height: 25%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+}
+li {
+  text-align: left;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+
+
+  list-style-type: none;
+  font-weight: bold;
+  margin: 10px;
+}
+.hover-style {
+  text-align: center;
+  vertical-align: top;
+  border: 0.5em solid rgb(0, 0, 0);
+  width: 14%;
+  height: 25%;
+  background-color: lightgray
+}
